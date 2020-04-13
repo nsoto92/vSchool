@@ -1,0 +1,160 @@
+body {
+  background-color: #005082;
+  color: #1b262c;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav > a {
+  text-decoration: none;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  text-decoration: underline;
+  font-size: 45px;
+}
+
+p,
+li {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+  background-color: #1b262c;
+  height: 50px;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 20px;
+  margin-top: 0;
+}
+
+header {
+  height: 150px;
+  width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.content {
+  border: 1px solid black;
+  background-color: #3282b8;
+  display: flex;
+  justify-content: left;
+  width: 800px;
+  margin: 20px auto;
+  height: 300px;
+}
+
+.guideInfo {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 50px;
+}
+
+.guideInfo > h1 {
+  font-size: 30px;
+}
+
+.guide {
+  border: 1px solid black;
+  height: 220px;
+  width: 250px;
+  margin: 10px 10px;
+}
+
+button {
+  border: 1px solid #bbe1fa;
+  background-color: #1b262c;
+  color: white;
+  width: 150px;
+  margin: auto;
+}
+
+footer {
+  background-color: #1b262c;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+  position: relative;
+  top: 70px;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: #1b262c;
+    color: #005082;
+    margin: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: underline;
+    font-size: 35px;
+  }
+
+  p {
+    color: white;
+  }
+
+  header {
+    height: 150px;
+    width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+
+  nav {
+    background-color: #005082;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    margin-top: 0;
+    border-bottom: 1px solid white;
+  }
+
+  .content {
+    background-color: #3282b8;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid white;
+    padding: 0;
+  }
+
+  .guide {
+    position: relative;
+    height: 220px;
+    width: 220px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+  }
+
+  footer {
+    background-color: #005082;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+    font-size: 12px;
+    border-top: 1px solid white;
+    position: relative;
+    top: 110px;
+  }
+}

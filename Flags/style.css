@@ -1,0 +1,224 @@
+.container {
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+}
+
+.innerContainer {
+  display: grid;
+}
+
+/* Flags by Country */
+.flag {
+  border: 1px solid black;
+  width: 150px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+#France {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+#Germany {
+  display: grid;
+}
+
+#Madagascar {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+#Switzerland {
+  display: grid;
+  background: red;
+}
+
+#cross1 {
+  position: absolute;
+  margin-top: 10px;
+  width: 20px;
+  height: 40px;
+  margin-left: 60px;
+}
+
+#cross2 {
+  height: 20px;
+  width: 40px;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+#Sweden {
+  background: rgb(41, 106, 162);
+  display: grid;
+}
+
+#Scross1 {
+  position: absolute;
+  width: 20px;
+  height: 60px;
+  margin-left: 40px;
+}
+
+#Scross2 {
+  height: 20px;
+  width: 150px;
+  margin-top: 20px;
+}
+
+#Gambia {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+#thin {
+  height: 15px;
+  margin-top: 2.5px;
+}
+
+#Tonga {
+  display: grid;
+  background: rgb(178, 36, 24);
+}
+
+#SwitzerlandInverted {
+  display: grid;
+  background: white;
+}
+
+.flag #SwitzerlandInverted {
+  width: 50px;
+  height: 30px;
+  border: none;
+}
+
+#Tcross1 {
+  position: absolute;
+  margin-top: 2px;
+  width: 8px;
+  height: 26px;
+  margin-left: 20px;
+}
+
+#Tcross2 {
+  height: 8px;
+  width: 26px;
+  margin-top: 10px;
+  margin-left: 11px;
+}
+
+#Japan {
+  background: white;
+}
+
+#Jcircle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+#Greece {
+  background: linear-gradient(to bottom, blue, blue 50%, white 50%, white);
+  background-size: 100% 10px;
+}
+
+#greeceSquare {
+  display: grid;
+  width: 50px;
+  height: 30px;
+}
+
+#Gcross1 {
+  position: absolute;
+  width: 6px;
+  height: 34px;
+  margin-left: 21px;
+}
+
+#Gcross2 {
+  height: 6px;
+  width: 50px;
+  margin-top: 13px;
+}
+
+#Niger {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+#middleCirc {
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+#Maldives {
+  display: grid;
+  background: rgb(195, 45, 58);
+}
+
+#flagMid {
+  height: 30px;
+  width: 100px;
+  margin: auto;
+}
+
+#moon {
+  position: relative;
+  display: block;
+  margin-left: 30px;
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+  box-shadow: inset 3px -1px 0 3px white;
+  border-radius: 50%;
+}
+
+/* Colors */
+.blue {
+  background: blue;
+}
+
+.white {
+  background: white;
+}
+
+.red {
+  background: red;
+}
+
+.black {
+  background: black;
+}
+
+.yellow {
+  background: yellow;
+}
+
+.green {
+  background: green;
+}
+
+.gold {
+  background: gold;
+}
+
+.wine {
+  background: rgb(178, 36, 24);
+}
+
+.orange {
+  background: rgb(209, 91, 39);
+}
+
+.lime {
+  background: rgb(80, 173, 66);
+}
+
+.darkGreen {
+  background: rgb(54, 124, 66);
+}
