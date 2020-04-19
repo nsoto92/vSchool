@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+    color: red;
+    height: 1000px;
+}
+
+header {
+    color: red;
+    text-align: center;
+}
+
+.container {
+    margin-top: 75px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+#square {
+    height: 500px;
+    width: 500px;
+    margin-left: 45%;
+    background-color: white;
+}
+
+.instructions {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
