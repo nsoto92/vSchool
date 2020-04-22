@@ -27,15 +27,30 @@ button.addEventListener("click", clearChat)
 
 // Feel free to edit the HTML <select> tag to make it more usable or elaborate. Mo themes, mo fun.
 
-var dropDown = document.getElementById("theme-drop-down")
+var redBlack = document.getElementById("theme-drop-down")
 
-let leftTheme = document.querySelector(".left")
-let rightTheme = document.querySelector(".right")
+function changeTheme(i) {
+    var color1 = document.querySelectorAll(".left")
+    var color2 = document.querySelectorAll(".right")
 
-function themeChange() {
-    if (dropDown.value === "red/black") {
-        leftTheme.style.backgroundColor = "red"
+    if (redBlack.value === "theme-one") {
+        for (var i = 0; i < color1.length; i++) {
+            color1[i].style.backgroundColor = "burlywood"
+        } for (var i = 0; i < color2.length; i++) {
+            color2[i].style.backgroundColor = "lightblue"
+            color2[i].style.color = "black"
+        }
+
+    } else if (redBlack.value === "theme-two") {
+        for (var i = 0; i < color1.length; i++) {
+            color1[i].style.backgroundColor = "red"
+        } for (var i = 0; i < color2.length; i++) {
+            color2[i].style.backgroundColor = "black"
+            color2[i].style.color = "white"
+        }
     }
 }
 
-dropDown.addEventListener("click", themeChange)
+redBlack.addEventListener("click", changeTheme)
+
+
