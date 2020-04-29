@@ -111,5 +111,19 @@ peopleArray.forEach(function (item, index, array) {
     }
 })
 
-console.log(eoName)
-console.log(eoOcc)
+// console.log(eoName)
+// console.log(eoOcc)
+
+// Create an array that mimics a grid like the following using nested for loops:
+
+arr = []
+
+for (var i = 0; i < 3; i++) {
+    var empArr = []
+    arr.push(empArr)
+    for (var j = 0; j < 3; j++) {
+        empArr.push(0)
+    }
+}
+
+console.log(arr)
