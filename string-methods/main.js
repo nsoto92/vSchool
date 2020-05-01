@@ -29,10 +29,10 @@ const finalProb = (a) => {
 
 const capitalize = (a) => {
     var arr = a.split("")
-    var str = (arr1) => {
-        for (var i = 0; i < arr1.length; i++) {
-            var letter = arr1.indexOf(i)
-            if (arr1.indexOf(i) === "r") {
+    const str = (arr) => {
+        for (var i = 0; i < arr.length; i++) {
+            var letter = arr[i]
+            if (letter === "r") {
                 letter.toUpperCase()
             }
         }
