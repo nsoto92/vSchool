@@ -9,7 +9,7 @@ function formAlert() {
     var location = form.travelLocation.value;
     const diet = [];
     for (let i = 0; i < form.check.length; i++) {
-        if (form.check.checked) {
+        if (form.check[i].checked === true) {
             diet.push(form.check[i].value);
         }
     }
