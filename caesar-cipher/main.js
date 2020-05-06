@@ -1,6 +1,6 @@
 var readline = require('readline-sync');
 
-let cipher = {
+let letters = {
     a: 'n', b: 'o', c: 'p',
     d: 'q', e: 'r', f: 's',
     g: 't', h: 'u', i: 'v',
@@ -11,6 +11,7 @@ let cipher = {
     v: 'i', w: 'j', x: 'k',
     y: 'l', z: 'm'
 }
-var input = readline.question('What phrase would you like to encrypt? ').toLowerCase();
-var shift = parseInt(readline.question('How many letters would you like to shift? '));
+
+// var input = readline.question('What phrase would you like to encrypt? ').toLowerCase();
+// var shift = parseInt(readline.question('How many letters would you like to shift? '));
 
