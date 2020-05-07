@@ -61,6 +61,8 @@ const run = () => {
 // Attack
 //////////////////////
 const attack = () => {
+    let randLoot = loot[Math.floor(Math.random() * loot.length)]
+    let randEnemies = enemiesArray[Math.floor(Math.random() * enemiesArray.length)]
     let currentEnemy = randEnemies.name
     let enemyHP = randEnemies.hp
     let characterAttack = mainCharacter.weapon.attack[Math.floor(Math.random() * mainCharacter.weapon.attack.length)]
@@ -79,7 +81,8 @@ const attack = () => {
                 run()
                 break
             } else {
-                console.log("> Escape unsuccesful.")
+                console.log("> Escape unsuccesful. The Enemy attacks you for: " + enemyAttack)
+                mainCharacter.hp = mainCharacter.hp - enemyAttack
 
             }
         } else if (combatOption === "a") { //Attack Flow
@@ -94,7 +97,7 @@ const attack = () => {
                 }
             } else {   //Loot and Regenerate
                 if (mainCharacter.hp < 100) { //Regenerate
-                    mainCharacter.hp = mainCharacter.hp + (mainCharacter.hp * .75)
+                    mainCharacter.hp = mainCharacter.hp + (mainCharacter.hp * .15)
                 }
                 var newInv = []
                 newInv.push(randEnemies.inventory, mainCharacter.inventory) //Loot
