@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 1400px;
+    height: 300px;
+    margin: auto;
+    padding-top: 50px;
+}
+
+.firstDiv{
+    text-align: center;
+    background-color: aqua;
+    height: 100%;
+}
+
+.secondDiv{
+    text-align: center;
+    background-color: palevioletred;
+    height: 100%;
+}
+
+.thirdDiv{
+    text-align: center;
+    background-color: goldenrod;
+    height: 100%;
+}
