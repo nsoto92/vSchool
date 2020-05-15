@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Travel Form</title>
+</head>
+
+<body>
+    <h1>Fill out your travel form.</h1>
+    <form name="travelForm">
+        First Name: <input type="text" name="fName">
+        <br>
+        Last Name: <input type="text" name="lName">
+        <br>
+        Age: <input type="number" name="age">
+        <br>
+        <br>
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male"> Male
+        <input type="radio" name="gender" value="Female"> Female
+        <input type="radio" name="gender" value="Rather Not Say"> I'd rather not say
+        <br>
+        <br>
+        <label>Select Your Destination: </label>
+        <select name="destination">
+            <option value="Puerto Rico">Puerto Rico</option>
+            <option value="Dominican Republic">Dominican Republic</option>
+            <option value="Cuba">Cuba</option>
+        </select>
+        <br>
+        <br>
+        <label>Meal Preference: </label>
+        <br>
+        <input type="checkbox" value="steak" name="meal"> Steak
+        <input type="checkbox" value="vegetarian" name="meal"> Vegetarian
+        <br>
+        <input type="checkbox" value="vegan" name="meal"> Vegan
+        <br>
+        <br>
+        <button>Submit.</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>
