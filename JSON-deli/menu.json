@@ -1,0 +1,66 @@
+{
+    "menu": [
+        {
+            "appetizers": [
+                {
+                    "name": "",
+                    "ingredients": "",
+                    "description": ""
+                },
+                {
+                    "name": "",
+                    "ingredients": "",
+                    "description": ""
+                }
+            ],
+            "cold sandwiches": [
+                {
+                    "name": "",
+                    "ingredients": "",
+                    "description": ""
+                },
+                {
+                    "name": "",
+                    "ingredients": "",
+                    "description": ""
+                }
+            ],
+            "hot sandwiches": [
+                {
+                    "name": "",
+                    "ingredients": "",
+                    "description": ""
+                },
+                {
+                    "name": "",
+                    "ingredients": "",
+                    "description": ""
+                }
+            ],
+            "desserts": [
+                {
+                    "name": "",
+                    "ingredients": "",
+                    "description": ""
+                },
+                {
+                    "name": "",
+                    "ingredients": "",
+                    "description": ""
+                }
+            ],
+            "drinks": [
+                {
+                    "name": "",
+                    "ingredients": "",
+                    "description": ""
+                },
+                {
+                    "name": "",
+                    "ingredients": "",
+                    "description": ""
+                }
+            ]
+        }
+    ]
+}
