@@ -3,7 +3,7 @@ if (localStorage.clicks > 0) {
     document.getElementById("clicks").innerHTML = localStorage.clicks
 }
 
-var num = () => {
+const num = () => {
 
     localStorage.clicks = Number(localStorage.clicks) + 1
     // Appends
