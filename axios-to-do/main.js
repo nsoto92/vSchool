@@ -22,19 +22,31 @@ function getAll() {
                 h2.textContent = "Description: " + response.data[i].description
                 h3.textContent = "Price: " + response.data[i].price
                 h4.textContent = "Image Url: " + response.data[i].imgUrl
+                // 
 
-                // APPENDING
+                // APPENDING:
+
+                if (response.data[i].completed) {
+                    h1.style.textDecoration = 'line-through'
+                    check.checked = true
+                } else {
+                    h1.style.textDecoration = 'none'
+                    check.checked = false
+                }
+
+
                 // PUT FUNCTION
                 document.getElementById('list').appendChild(check)
                 check.addEventListener("click", function (event) {
-                    event.preventDefault()
-                    axios.put(`https://api.vschool.io/norbert/todo/${response.data[i]._id}`, { completed: true })
-                        .then(response => console.log(response))
+                    axios.put(`https://api.vschool.io/norbert/todo/${response.data[i]._id}`, { completed: !response.data[i].completed })
+                        .then(response => getAll())
                         .catch(error => console.log(error))
                 })
-                //
+                // FINISH PUT
 
                 document.getElementById('list').appendChild(h1)
+
+
                 //DELETE FUNCTION
                 document.getElementById('list').appendChild(deleteButton)
                 deleteButton.addEventListener("click", function (event) {
@@ -43,11 +55,13 @@ function getAll() {
                         .then(response => getAll())
                         .catch(error => console.log(error))
                 })
-                //
+                // FINISH DELETE
+
+
                 document.getElementById('list').appendChild(h2)
                 document.getElementById('list').appendChild(h3)
                 document.getElementById('list').appendChild(h4)
-
+                // FINISH APPENDING
             }
         })
         .catch(error => console.log(error))
